@@ -3,6 +3,7 @@
 .body-style {
 	background-color: #2f3542 !important;
 	font-family: "Montserrat", sans-serif;
+	color: #fff;
 }
 
 .header-title {
@@ -28,7 +29,6 @@
 .canvas-layers {
 	margin: 10px;
 	width: calc(20% - 20px);
-	color: #fff;
 	font-size: 1em;
 }
 
@@ -45,4 +45,7 @@
 
 .layer {
 	margin: 10px;
+}
+
+footer {
 }
