@@ -8,7 +8,7 @@ resize();
 // resize canvas when window is resized
 function resize() {
 	ctx.canvas.width = window.innerWidth * 0.8;
-	ctx.canvas.height = window.innerHeight;
+	ctx.canvas.height = window.innerHeight - 20;
 }
 
 // add event listeners to specify when functions should be triggered
