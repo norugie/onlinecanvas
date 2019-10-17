@@ -7,28 +7,34 @@
 
 		<link rel="stylesheet" href="css/style.css" />
 
+		<script
+			type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"
+		></script>
+
 		<title>Loona - An Online Canvas</title>
 	</head>
 	<body class="body-style">
-		<!-- Header Title -->
-		<div class="header-title">
-			<center>
-				<p>Loona</p>
-				<h5>An online canvas</h5>
-			</center>
-		</div>
 		<!-- Canvas -->
 		<div class="canvas">
 			<!-- Canvas Area -->
-			<div class="canvas-area">
-				<div class="canvas-control">
-					<button>Put button options in this area</button>
-				</div>
-				<canvas class="canvas-loona"></canvas>
+			<div class="canvas-area" id="area">
+				<canvas class="canvas-loona" id="loona"></canvas>
 			</div>
 			<!-- Canvas Layers -->
 			<div class="canvas-layers">
-				<p style="margin: 0px;">
+				<!-- Header Title -->
+				<div class="header-title">
+					<center>
+						<p>Loona</p>
+						<h5>An online canvas</h5>
+					</center>
+				</div>
+				<hr />
+				<div class="canvas-control">
+					<button>Put button options in this area</button>
+				</div>
+				<p style="margin: 5px;">
 					Layers
 					<span style="float: right;">
 						<img
@@ -55,14 +61,16 @@
 					/>
 					<hr />
 				</div>
+				<!-- Footer -->
+				<footer>
+					<div class="copyrights">
+						<hr />
+						<p>&copy; 2019 Loona | Rugie Ann Barrameda</p>
+					</div>
+				</footer>
 			</div>
 		</div>
-		<!-- Footer -->
-		<footer>
-			<div class="copyrights">
-				<hr />
-				<p>&copy; 2019 Loona | Rugie Ann Barrameda</p>
-			</div>
-		</footer>
+
+		<script src="js/app.js"></script>
 	</body>
 </html>
