@@ -23,7 +23,7 @@
 
 .canvas {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .canvas-layers {
@@ -37,10 +37,21 @@
 	width: calc(80% - 20px);
 }
 
+@media screen and (max-width: 769px) {
+	.canvas-layers {
+		width: calc(100% - 20px);
+	}
+
+	.canvas-area {
+		width: calc(100% - 20px);
+	}
+}
+
 .canvas-loona {
 	width: 100%;
 	height: auto;
 	border: 2px solid #fff;
+	background-color: #fff;
 }
 
 .layer {
