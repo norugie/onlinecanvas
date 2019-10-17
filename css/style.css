@@ -58,3 +58,9 @@
 .layer {
 	margin: 10px;
 }
+
+footer {
+	position: fixed;
+	float: right;
+	bottom: 0;
+}
