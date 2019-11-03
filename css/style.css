@@ -51,8 +51,8 @@
 .canvas-loona {
 	width: 100%;
 	height: auto;
-	border: 2px solid #fff;
-	background-color: #fff;
+	border: 2px solid #fff !important;
+	background-color: #fff !important;
 }
 
 .layer {
