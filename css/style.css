@@ -1,66 +1,153 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
-
 .body-style {
-	background-color: #2f3542 !important;
-	font-family: "Montserrat", sans-serif;
-	color: #fff;
+    background-color: #2f3542 !important;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
 }
 
 .header-title {
-	margin: 10px 10px;
-	color: #f1f2f6;
+    margin: 10px 10px;
+    color: #f1f2f6;
 }
 
 .header-title p {
-	font-size: 3em;
-	margin: 10px;
+    font-size: 3em;
+    margin: 10px;
 }
 
 .header-title h5 {
-	margin-top: 10px;
-	margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .canvas {
-	display: flex;
-	flex-wrap: wrap;
-	height: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 768px;
 }
 
 .canvas-layers {
-	margin: 10px;
-	width: calc(20% - 20px);
-	font-size: 1em;
+    margin: 10px;
+    width: calc(20% - 20px);
+    font-size: 1em;
 }
 
 .canvas-area {
-	margin: 10px;
-	width: calc(80% - 20px);
+    margin: 10px;
+    width: calc(80% - 20px);
 }
 
 @media screen and (max-width: 769px) {
-	.canvas-layers {
-		width: calc(100% - 20px);
-	}
-
-	.canvas-area {
-		width: calc(100% - 20px);
-	}
+    .canvas-layers {
+        width: calc(100% - 20px);
+    }
+    .canvas-area {
+        width: calc(100% - 20px);
+    }
 }
 
 .canvas-loona {
-	width: 100%;
-	height: auto;
-	border: 2px solid #fff !important;
-	background-color: #fff !important;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff !important;
+    background-color: #fff !important;
+}
+
+.canvas-layer-control {
+    clear: both;
+    padding-top: 5px;
 }
 
 .layer {
-	margin: 10px;
+    margin: 10px;
 }
 
 footer {
-	position: fixed;
-	float: right;
-	bottom: 0;
+    position: fixed;
+    float: right;
+    bottom: 0;
+}
+
+
+/* Color Buttons */
+
+.round-button {
+    width: 12%;
+    float: left;
+    margin-right: 15px;
+}
+
+.round-button-circle {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    overflow: hidden;
+}
+
+.round-button a {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Color Buttons - Colors */
+
+#btn-blue {
+    background: #4679BD;
+}
+
+#btn-blue:hover {
+    background: #30588e;
+}
+
+#btn-yellow {
+    background: #e2c044;
+}
+
+#btn-yellow:hover {
+    background: #ceaf3e;
+}
+
+#btn-green {
+    background: #a6c86c;
+}
+
+#btn-green:hover {
+    background: #95b561;
+}
+
+#btn-red {
+    background: #f25757;
+}
+
+#btn-red:hover {
+    background: #dc5050;
+}
+
+#btn-orange {
+    background: #f55d3e;
+}
+
+#btn-orange:hover {
+    background: #df5539;
+}
+
+#btn-purple {
+    background: #9c7dde;
+}
+
+#btn-purple:hover {
+    background: #8e72ca;
 }
