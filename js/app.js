@@ -1,5 +1,6 @@
-// set canvas id to variable
+// set canvas id and initial color to variable
 var canvas = document.getElementById("loona");
+var color = "#000";
 
 // get canvas 2D context and set it to the correct size
 var ctx = canvas.getContext("2d");
@@ -26,15 +27,13 @@ function setPosition(e) {
     pos.y = e.clientY;
 }
 
+// new color from clicked buttons
 function colorValue(e) {
-    var color = e.dataset.color;
-    console.log(color);
+    color = e.dataset.color;
 }
 
 function draw(e) {
     if (e.buttons !== 1) return; // if mouse is pressed.....
-
-    var color = "000";
 
     ctx.beginPath(); // begin the drawing path
 
