@@ -1,5 +1,5 @@
 // set canvas id and initial color to variable
-var canvas = document.getElementById("loona");
+var canvas = document.getElementById("loona_1");
 var color = "#000";
 
 // get canvas 2D context and set it to the correct size
