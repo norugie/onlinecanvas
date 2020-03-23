@@ -3,6 +3,7 @@
     background-color: #2f3542 !important;
     font-family: "Montserrat", sans-serif;
     color: #fff;
+    overflow: hidden;
 }
 
 .body-style a {
@@ -38,7 +39,6 @@
 }
 
 .canvas-area {
-    margin: 10px;
     width: calc(80% - 20px);
 }
 
@@ -54,13 +54,14 @@
 .canvas-loona {
     width: 100%;
     height: auto;
-    border: 2px solid #fff !important;
     background-color: #fff !important;
 }
 
 .canvas-layer-control {
     clear: both;
     padding-top: 5px;
+    max-height: 700px;
+    overflow-y: scroll;
 }
 
 .layer {
@@ -81,7 +82,13 @@ footer {
     padding: 5px;
     margin-top: -13px;
     border: solid 2px #fff;
+    border-radius: 5px;
     color: #fff;
+    transition: all 0.3s;
+}
+
+.layer-button:hover {
+    background-color: #29447e;
 }
 
 
