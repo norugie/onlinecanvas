@@ -67,12 +67,12 @@
                     </div>
                 </div>
             </div>
-            <div class="canvas-layer-control">
+            <div id="canvas-layer-control" class="canvas-layer-control">
                 <hr />
                 <p style="margin: 20px 10px;">
                     Layers
                     <span style="float: right;">
-                        <button type="button" class="layer-button">
+                        <button type="button" id="new-layer" class="layer-button">
                             <img
                                 src="assets/plus.png"
                                 alt="Layer plus icon"
@@ -82,7 +82,7 @@
                         </button>
                     </span>
                 </p>
-                <div class="layer">
+                <div class="layer" data-layer="1">
                     <img src="assets/layer.png" alt="Layer icon" style="vertical-align: middle;" width="40px" />
                     <span style="vertical-align: middle;">Layer 1</span>
                     <img src="assets/x-mark.png" alt="Layer plus icon" style="float: right; margin-top: 19px; margin-right: 10px;" width="10px" />
@@ -98,8 +98,12 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/canvas.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        var ctr = 1;
+    </script>
 </body>
 
 </html>
